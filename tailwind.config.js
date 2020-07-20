@@ -1,5 +1,5 @@
 module.exports = {
-  purge: [],
+  purge: ["./components/**/*.tsx"],
   theme: {
     extend: {
       colors: {

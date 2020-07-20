@@ -1,13 +1,10 @@
 import React from "react";
 import { AppProps } from "next/app";
-import "../styles/index.css";
+import "../styles/tailwind.css";
+import "../styles/app.scss";
 
 const TailWindNextRoot = ({ Component, pageProps }: AppProps) => {
-  return (
-    <div className="container">
-      <Component {...pageProps} />
-    </div>
-  );
+  return <Component {...pageProps} />;
 };
 
 export default TailWindNextRoot;

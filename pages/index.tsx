@@ -1,23 +1,30 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
+import Card from "../components/Card";
+import Input from "../components/Input";
+import Button from "../components/Button";
 
-const Wrapper = styled.div`
-  ${tw`bg-indigo-300 h-56 text-center`}
-
-  h1 {
-    &:hover {
-      ${tw`shadow`}
-    }
-  }
+const Wrapper = styled.div``;
+const Navbar = styled.div`
+  ${tw`bg-white shadow h-10 w-full mx-auto flex items-center px-6`}
 `;
 
 const index = () => {
   return (
     <Wrapper>
-      <h1 tw="text-5xl uppercase bg-white inline-block shadow-2xl transition-all duration-300 rounded-md mt-5 px-5 text-primary border-b-8">
-        hello
-      </h1>
+      <Navbar>
+        <h2>Logo</h2>
+      </Navbar>
+
+      <div tw="flex justify-center items-center h-screen">
+        <Card>
+          <Input />
+          <Input />
+          <Input />
+          <Button>Signup</Button>
+        </Card>
+      </div>
     </Wrapper>
   );
 };
